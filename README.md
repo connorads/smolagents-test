@@ -5,7 +5,7 @@ Let's have some fun with `smolagents`!
 ## Prerequisites
 
 ```sh
-brew install mise uv
+brew install mise uv common-fate/granted/granted
 mise install
 ```
 
@@ -13,11 +13,20 @@ mise install
 
 ```sh
 uv pip sync -r requirements.txt
-huggingface-cli login
 ```
 
 ## Run
 
+## Hugging Face model
+
 ```sh
-python test.py
+huggingface-cli login
+python hf.py
+```
+
+## AWS Bedrock model
+
+```sh
+assume
+python bedrock.py
 ```

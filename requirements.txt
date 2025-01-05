@@ -25,6 +25,12 @@ attrs==24.3.0
     #   referencing
 beautifulsoup4==4.12.3
     # via markdownify
+boto3==1.35.92
+    # via smolagents-test (pyproject.toml)
+botocore==1.35.92
+    # via
+    #   boto3
+    #   s3transfer
 certifi==2024.12.14
     # via
     #   httpcore
@@ -110,6 +116,10 @@ jinja2==3.1.5
     #   torch
 jiter==0.8.2
     # via openai
+jmespath==1.0.1
+    # via
+    #   boto3
+    #   botocore
 jsonschema==4.23.0
     # via litellm
 jsonschema-specifications==2024.10.1
@@ -188,6 +198,7 @@ pygments==2.18.0
     # via rich
 python-dateutil==2.9.0.post0
     # via
+    #   botocore
     #   e2b
     #   pandas
 python-dotenv==1.0.1
@@ -227,6 +238,8 @@ rpds-py==0.22.3
     #   referencing
 ruff==0.8.6
     # via gradio
+s3transfer==0.10.4
+    # via boto3
 safehttpx==0.1.6
     # via gradio
 safetensors==0.5.0
@@ -298,7 +311,9 @@ typing-extensions==4.12.2
 tzdata==2024.2
     # via pandas
 urllib3==2.3.0
-    # via requests
+    # via
+    #   botocore
+    #   requests
 uvicorn==0.34.0
     # via gradio
 wcwidth==0.2.13

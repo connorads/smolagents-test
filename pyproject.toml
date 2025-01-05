@@ -5,5 +5,5 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "smolagents", "huggingface_hub[cli]"
+    "smolagents", "huggingface_hub[cli]", "boto3"
 ]
