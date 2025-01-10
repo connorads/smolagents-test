@@ -12,7 +12,7 @@ mise install
 ## Setup
 
 ```sh
-uv pip sync -r requirements.txt
+uv pip sync requirements.txt
 ```
 
 ## Run
